@@ -16,8 +16,16 @@ def factorial(number):
         counter += 1
     return result
 
+def sum_digits(number):
+    sum = 0
+    for digit in str(number):
+        sum += int(digit)
+    
+    return sum
+
 def main():
     print(f"6 factorial: {factorial(6)}")
+    print(f"Sum of digits in 1128: {sum_digits(1128)}")
 
 if __name__ == "__main__":
     main()
