@@ -24,8 +24,11 @@ def sum_digits(number):
     return sum
 
 def main():
-    print(f"6 factorial: {factorial(6)}")
-    print(f"Sum of digits in 1128: {sum_digits(1128)}")
+    number = int(input("Enter number to calculate factorial of: "))
+    number_factorial = factorial(number)
+    number_digits_sum = sum_digits(number_factorial)
+
+    print(f"{number}! digits sum: {number_digits_sum}")
 
 if __name__ == "__main__":
     main()
