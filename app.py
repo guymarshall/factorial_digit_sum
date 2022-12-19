@@ -7,6 +7,7 @@ and the sum of the digits in the number 10! is 3 + 6 + 2 + 8 + 8 + 0 + 0 = 27.
 Find the sum of the digits in the number 100!
 """
 
+
 def factorial(number):
     result = 1
     counter = 1
@@ -16,12 +17,14 @@ def factorial(number):
         counter += 1
     return result
 
+
 def sum_digits(number):
     sum = 0
     for digit in str(number):
         sum += int(digit)
-    
+
     return sum
+
 
 def main():
     number = int(input("Enter number to calculate factorial of: "))
@@ -29,6 +32,7 @@ def main():
     number_digits_sum = sum_digits(number_factorial)
 
     print(f"{number}! digits sum: {number_digits_sum}")
+
 
 if __name__ == "__main__":
     main()
